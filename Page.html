@@ -36,40 +36,122 @@ body {
   flex: 33.33%;
   padding: 5px;
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 </style>
 </head>
 <body> 
     <div class="topnav">
         <a class="active" href="#home"><b>Aesthetic</b></a>
     </div>
-    <img src="https://imgur.com/Q7l7fMm" alt="Palace" width="1600" height="800" >
+    <img src="https://i.imgur.com/Q7l7fMm.jpg" alt="Palace" width="1600" height="800" >
     <h1 style:"font-family:'Cursive'; color:blueviolet;font-size: 40px;">Artists</h1>
     
     <!Paintings>
     <div class="row">
       <div class="column">
-        <img src="https://imgur.com/o4qjcah" alt="Oil Paint" style="width:100%">
+        <img src="https://i.imgur.com/o4qjcah.jpg" alt="Oil Paint" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://imgur.com/tALLjpE" alt="Water colour" style="width:100%">
+        <img src="https://i.imgur.com/tALLjpE.jpg" alt="Water colour" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://imgur.com/eUPaRJj" alt="Acrylic" style="width:100%">
+        <img src="https://i.imgur.com/eUPaRJj.jpg" alt="Acrylic" style="width:100%">
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <img src="https://imgur.com/XwEw3NA" alt="Sketch" style="width:100%">
+        <img src="https://i.imgur.com/XwEw3NA.jpg" alt="Sketch" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://imgur.com/7HUtwqv" alt="Digital" style="width:100%">
+        <img src="https://i.imgur.com/7HUtwqv.jpg" alt="Digital" style="width:100%">
       </div>
       <div class="column">
-        <img src="https://imgur.com/IfCmX9T" alt="Ink" style="width:100%">
+        <img src="https://i.imgur.com/IfCmX9T.jpg" alt="Ink" style="width:100%">
       </div>
     </div>
+ <!About>
+ <h3>About</h3>
+ <p1> Art is a creative activity that expresses imaginative or technical skill. It produces a product, an object. Art is a diverse range of human activities in creating visual, performing artifacts, and expressing the authors imaginative mind. The product of art is called a work of art, for others to experience. Some art is useful in a practical sense, such as a sculptured clay bowl that can be used. That kind of art is sometimes called a craft. Those who make art are called artists. They hope to affect the emotions of people who experience it. Some people find art relaxing, exciting or informative. Some say people are driven to make art due to their inner creativity</p1>
+ <div class="row">
+  <div class="column">
+    <img src="https://i.imgur.com/oe279Bg.jpg" alt="Najeeb Thottungal" style="width:100%">
+    <h3>Najeeb Thottungal</h3>
+    <p>"This is the first time that I attempted such a huge project. 
+        Dear CSK is the first animated film that I worked on,"</p>
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/qpTMbQt.jpg" alt="Valerin" style="width:100%">
+    <h3>Valerie Lin</h3>
+    <p>"Valerie is an artist based in Berlin where she studies finearts. Her style is very “calm”, 
+        you can see that on the IG feed where she posts images that sometimes include her desk."</p>
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/ygCtb05.jpg" alt="Raunaq Mangottil" style="width:100%">
+    <h3>Raunaq Mangottil</h3>
+    <p>"Raunaq Mangottil is the founder of Fully Filmy, India's Movie Merchandise Destination. 
+        Being a 90s kid trapped in an adult's body, he worships Mani Ratnam, A.R.Rahman, Tarantino and everything that is associated with the golden decade before the internet changed the world for better or worse. "</p>
+  </div>
+  <div class="column">
+    <img src="https://i.imgur.com/aeZ1ivd.jpg" alt="Elon" style="width:100%">
+    <h3>Elon Musk</h3>
+    <p>"Elon Musk is an entrepreneur and business magnate. 
+        He is the founder, CEO and Chief Engineer at SpaceX; early-stage investor, CEO and Product Architect of Tesla, Inc"</p>
+  </div>
+  <!Contact>
+  <h3>Contact Form</h3>
 
-      
-    
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
 </body>
 </html>
