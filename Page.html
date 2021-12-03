@@ -7,151 +7,205 @@
 body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-    }
-.topnav {
+  }
+.hrwi{
+  max-width:100%;
+  height:auto;
+}
+.navbar {
   overflow: hidden;
-  background-color: rgb(248, 241, 241);
-    }
-.topnav a {
-  float: left;
-  color: #f756b9;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
 }
-.topnav a.active {
-  background-color: #f2f2f2;
-  color: #ffb3df;
+.navbar c {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-* {
-  box-sizing: border-box;
+.h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin-left: 100px ;
+    padding-left: 30px;
 }
-
+.content {
+  padding: 16px;
+}
 .row {
   display: flex;
 }
-
 .column {
-  flex: 33.33%;
-  padding: 5px;
+  flex: 50%;
+  padding: 8px 16px;
 }
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  position: relative;
 }
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 250px;
+  right: 400px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.block {
+  position: absolute;
+  bottom: 250px;
+  right: 400px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+input, textarea {
+  width: 100%;
+}
+
 </style>
 </head>
 <body> 
-    <div class="topnav">
-        <a class="active" href="#home"><b>Aesthetic</b></a>
+  <div class="navbar">
+    <c><b>B R</b> ARCHITECT</c>
+    <a Contact>Contact</a>
+    <a About>About</a>
+    <a Projects>Projects</a>
+  </div>
+    <div class="container">
+    <img class="hrwi" src="https://www.w3schools.com/w3images/architect.jpg" alt="Building" >
+    <div class="text-block">
+      <h4>BR ARCHITECTS</h4>
     </div>
-    <img src="https://i.imgur.com/Q7l7fMm.jpg" alt="Palace" width="1600" height="800" >
-    <h1 style:"font-family:'Cursive'; color:blueviolet;font-size: 40px;">Artists</h1>
-    
-    <!Paintings>
+  </div>
+    <h3>Projects</h3>
+    <!Projects>
     <div class="row">
       <div class="column">
-        <img src="https://i.imgur.com/o4qjcah.jpg" alt="Oil Paint" style="width:100%">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" >
+        <div class="block">
+          <h4>Summer House</h4>
+        </div>
       </div>
+    </div>
+    </div>
       <div class="column">
-        <img src="https://i.imgur.com/tALLjpE.jpg" alt="Water colour" style="width:100%">
-      </div>
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
+        <div class="block">
+          <h4>Brick House</h4>
+        </div></div>
+    </div>
       <div class="column">
-        <img src="https://i.imgur.com/eUPaRJj.jpg" alt="Acrylic" style="width:100%">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated"  >
+        <div class="block">
+          <h4>Renovated</h4>
+        </div>
       </div>
+    </div>
+      <div class="column">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House"  >
+        <div class="block">
+          <h4>Barn House</h4>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="row">
       <div class="column">
-        <img src="https://i.imgur.com/XwEw3NA.jpg" alt="Sketch" style="width:100%">
-      </div>
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House"  >
+        </div>
+    </div>
       <div class="column">
-        <img src="https://i.imgur.com/7HUtwqv.jpg" alt="Digital" style="width:100%">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
+        <div class="block">
+          <h4>Brick House</h4>
+        </div>
       </div>
+    </div>
       <div class="column">
-        <img src="https://i.imgur.com/IfCmX9T.jpg" alt="Ink" style="width:100%">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated" >
+        <div class="block">
+          <h4>Renovated</h4>
+        </div>
       </div>
+    </div>
+      <div class="column">
+        <div class="container">
+        <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House" >
+        <div class="block">
+          <h4>Barn House</h4>
+        </div>
+      </div>
+    </div>
     </div>
  <!About>
  <h3>About</h3>
- <p1> Art is a creative activity that expresses imaginative or technical skill. It produces a product, an object. Art is a diverse range of human activities in creating visual, performing artifacts, and expressing the authors imaginative mind. The product of art is called a work of art, for others to experience. Some art is useful in a practical sense, such as a sculptured clay bowl that can be used. That kind of art is sometimes called a craft. Those who make art are called artists. They hope to affect the emotions of people who experience it. Some people find art relaxing, exciting or informative. Some say people are driven to make art due to their inner creativity</p1>
+ <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p1>
  <div class="row">
   <div class="column">
-    <img src="https://i.imgur.com/oe279Bg.jpg" alt="Najeeb Thottungal" style="width:100%">
-    <h3>Najeeb Thottungal</h3>
-    <p>"This is the first time that I attempted such a huge project. 
-        Dear CSK is the first animated film that I worked on,"</p>
+    <img class="crp" src="https://www.w3schools.com/w3images/team2.jpg" alt="Jhon Doe" >
+    <h3>John Doe</h3>
+    <h7 style="opacity: 0.60;">Architect</h7>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <input type="submit" value="Contact">
   </div>
-  <div class="column">
-    <img src="https://i.imgur.com/qpTMbQt.jpg" alt="Valerin" style="width:100%">
-    <h3>Valerie Lin</h3>
-    <p>"Valerie is an artist based in Berlin where she studies finearts. Her style is very “calm”, 
-        you can see that on the IG feed where she posts images that sometimes include her desk."</p>
+    <div class="column">
+    <img class="crp" src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe" >
+    <h3>Jane Doe</h3>
+    <h7 style="opacity: 0.60;">CEO & Founder</h7>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <input type="submit" value="Contact">
   </div>
-  <div class="column">
-    <img src="https://i.imgur.com/ygCtb05.jpg" alt="Raunaq Mangottil" style="width:100%">
-    <h3>Raunaq Mangottil</h3>
-    <p>"Raunaq Mangottil is the founder of Fully Filmy, India's Movie Merchandise Destination. 
-        Being a 90s kid trapped in an adult's body, he worships Mani Ratnam, A.R.Rahman, Tarantino and everything that is associated with the golden decade before the internet changed the world for better or worse. "</p>
+    <div class="column">
+    <img class="crp" src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross" >
+    <h3>Mike Ross</h3>
+    <h7 style="opacity: 0.60;">Architect</h7>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</p>
+    <input type="submit" value="Contact">
   </div>
-  <div class="column">
-    <img src="https://i.imgur.com/aeZ1ivd.jpg" alt="Elon" style="width:100%">
-    <h3>Elon Musk</h3>
-    <p>"Elon Musk is an entrepreneur and business magnate. 
-        He is the founder, CEO and Chief Engineer at SpaceX; early-stage investor, CEO and Product Architect of Tesla, Inc"</p>
+    <div class="column">
+    <img class="crp" src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star">
+    <h3>Dan Star</h3>
+    <h7 style="opacity: 0.60;">Architect</h7>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <input type="submit" value="Contact">
+  </div>
   </div>
   <!Contact>
-  <h3>Contact Form</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-</div>
+  <h3>Contact</h3>
+  <input type="text" placeholder="Name" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
+  <input type="text" placeholder="Email" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
+  <input type="text" placeholder="Subject" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
+  <input type="text" placeholder="Comment" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
+  <input type="submit" value="SEND MESSAGE" style="width: 216px;">
+  <img src="https://www.w3schools.com/w3images/map.jpg">
+  <div></div>
 </body>
 </html>
