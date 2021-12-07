@@ -56,15 +56,21 @@ body {
   top: 8px;
   left: 16px;
 }
+.bigcontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .container {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Bottom right text */
 .text-block {
   position: absolute;
-  bottom: 250px;
-  right: 400px;
+  bottom: 300px;
   background-color: black;
   color: white;
   padding-left: 20px;
@@ -72,8 +78,6 @@ body {
 }
 .block {
   position: absolute;
-  bottom: 250px;
-  right: 400px;
   background-color: black;
   color: white;
   padding-left: 20px;
@@ -81,6 +85,13 @@ body {
 }
 input, textarea {
   width: 100%;
+}
+.foot{
+  color: #fff;
+  background-color: #000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
 }
 
 </style>
@@ -92,7 +103,7 @@ input, textarea {
     <a About>About</a>
     <a Projects>Projects</a>
   </div>
-    <div class="container">
+    <div class="bigcontainer">
     <img class="hrwi" src="https://www.w3schools.com/w3images/architect.jpg" alt="Building" >
     <div class="text-block">
       <h4>BR ARCHITECTS</h4>
@@ -103,68 +114,79 @@ input, textarea {
     <div class="row">
       <div class="column">
         <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" >
-        <div class="block">
-          <h4>Summer House</h4>
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" >
+          <div class="block">
+            <h4>Summer House</h4>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="container">
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
+          <div class="block">
+            <h4>Brick House</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated"  >
+          <div class="block">
+            <h4>Renovated</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House"  >
+          <div class="block">
+            <h4>Barn House</h4>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-      <div class="column">
-        <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
-        <div class="block">
-          <h4>Brick House</h4>
-        </div></div>
-    </div>
-      <div class="column">
-        <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated"  >
-        <div class="block">
-          <h4>Renovated</h4>
-        </div>
-      </div>
-    </div>
-      <div class="column">
-        <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House"  >
-        <div class="block">
-          <h4>Barn House</h4>
-        </div>
-      </div>
-    </div>
-    </div>
+
     <div class="row">
       <div class="column">
         <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House"  >
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" >
+          <div class="block">
+            <h4>Summer House</h4>
+          </div>
         </div>
-    </div>
+      </div>
+    
       <div class="column">
         <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
-        <div class="block">
-          <h4>Brick House</h4>
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" >
+          <div class="block">
+            <h4>Brick House</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated"  >
+          <div class="block">
+            <h4>Renovated</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House"  >
+          <div class="block">
+            <h4>Barn House</h4>
+          </div>
         </div>
       </div>
     </div>
-      <div class="column">
-        <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated" >
-        <div class="block">
-          <h4>Renovated</h4>
-        </div>
-      </div>
-    </div>
-      <div class="column">
-        <div class="container">
-        <img class="hrwi" src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House" >
-        <div class="block">
-          <h4>Barn House</h4>
-        </div>
-      </div>
-    </div>
-    </div>
+
  <!About>
  <h3>About</h3>
  <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p1>
@@ -200,12 +222,14 @@ input, textarea {
   </div>
   <!Contact>
   <h3>Contact</h3>
-  <input type="text" placeholder="Name" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
-  <input type="text" placeholder="Email" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
-  <input type="text" placeholder="Subject" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
-  <input type="text" placeholder="Comment" required="" style="width: 500px;margin-bottom: 5px;margin-right: 10000px;">
+  <input type="text" placeholder="Name" required="" style="width: 500px;margin-bottom: 5px;"><br>
+  <input type="text" placeholder="Email" required="" style="width: 500px;margin-bottom: 5px;"><br>
+  <input type="text" placeholder="Subject" required="" style="width: 500px;margin-bottom: 5px;"><br>
+  <input type="text" placeholder="Comment" required="" style="width: 500px;margin-bottom: 5px;"><br>
   <input type="submit" value="SEND MESSAGE" style="width: 216px;">
-  <img src="https://www.w3schools.com/w3images/map.jpg">
-  <div></div>
+  <img src="https://www.w3schools.com/w3images/map.jpg" width="100%" style="padding-top: 10px; padding-bottom: 10px;">
+  <footer class="foot">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
+  </footer>
 </body>
 </html>
